@@ -1,26 +1,7 @@
 <?php 
-require 'app.php';
+require 'connectdb.php';
+include 'appregistration.php';
 
-$username = $_POST['username'];
-$email = $_POST['mail'];
-$password = crypt($_POST['password']);
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$linkedin = $_POST['linkedin'];
-$github = $_POST['github'];
-
-
-
-$sql = "INSERT INTO student (username, email, password)
-VALUES ('$username', '$email', '$password')";
-
-if ($connectdb->query($sql) === TRUE) {
-    echo "Connected successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $connectdb->error;
-}
-
-$connectdb->close();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -43,11 +24,8 @@ $connectdb->close();
             <input type="url" name="linkedin" id="linkedin">
             <label for="github">Github</label>
             <input type="url" name="github" id="github"> -->
-			<button type="submit">Register</button>
+			<button type="submit" name="register">Register</button>
             <!-- shows the inputs from registration page-->
 		</form>
-        <?php
-                echo $username . "<br/>" . $email . $password . $firstname . $lastname . $linkedin . $github;
-        ?>
 	</body>
 </html>

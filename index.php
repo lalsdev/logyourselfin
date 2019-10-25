@@ -18,10 +18,14 @@ include 'assets/php/appindex.php';
 				</div>
 				<div class="form-group">
 					<label for="login">Password</label>
-					<input class="form-control" type="password" name="login" id="" value="" />
+					<input class="form-control" type="password" name="password" id="" value="" />
 				</div>
-				<button type="submit" class="btn btn-outline-secondary" name="submit">Log in</button>
-				<p>Don't have an account yet? Create it <a href="assets/php/registration.php">here</a></p>
+				<button type="submit" class="btn btn-outline-secondary" name="submit">Log in</button><br/>
+				<small>Don't have an account yet? Create it <a href="assets/php/registration.php">here</a></small><br/>
+				<?php
+				echo $errorall;
+				echo $errorlogin;
+				?>
 			</form>
 		</div>
 	</body>

@@ -25,7 +25,10 @@ include 'appregistration.php';
                 <label for="login">Choose a password</label>
                 <input class="form-control" type="password" name="login" id="login"/>
                 </div>
-                <button type="submit" name="submit" class="btn btn-outline-secondary">Register</button>
+                <button type="submit" name="submit" class="btn btn-outline-secondary">Register</button><br/>
+                <?php
+                echo $errorregistration;
+                ?>
             </form>
         </div>
 	</body>

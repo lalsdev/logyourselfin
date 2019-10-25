@@ -7,25 +7,26 @@ include 'appregistration.php';
 <html>
 	<head>
 		<title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<form action="" method="post" accept-charset="utf-8">
-			<label for="username">Your username</label>
-			<input type="text" name="username" id="username" />
-			<label for="mail">Your email</label>
-			<input type="email" name="mail" id="mail"/>
-			<label for="login">Choose a password</label>
-			<input type="password" name="login" id="login"/>
-            <!-- <label for="firstname">First name</label>
-            <input type="text" name="firstname" id="firstname"/>
-            <label for="lastname">Last name</label>
-            <input type="text" name="lastname" id="lastname"/>
-            <label for="linkedin">Linkedin</label>
-            <input type="url" name="linkedin" id="linkedin">
-            <label for="github">Github</label>
-            <input type="url" name="github" id="github"> -->
-			<button type="submit" name="register">Register</button>
-            <!-- shows the inputs from registration page-->
-		</form>
+        <div class="mx-auto col-5">
+            <form action="" method="post" accept-charset="utf-8" class="mt-5 bordercool">
+                <div class="form-group">
+                    <label for="username">Your username</label>
+                    <input class="form-control" type="text" name="username" id="username" />
+                </div>
+                <div class="form-group">
+                    <label for="mail">Your email</label>
+                    <input class="form-control" type="email" name="mail" id="mail"/>
+                </div>
+                <div class="form-group">
+                <label for="login">Choose a password</label>
+                <input class="form-control" type="password" name="login" id="login"/>
+                </div>
+                <button type="submit" name="submit" class="btn btn-outline-secondary">Register</button>
+            </form>
+        </div>
 	</body>
 </html>

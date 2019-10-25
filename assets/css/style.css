@@ -1,0 +1,10 @@
+.bigbox {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+.bordercool{
+    box-shadow: 10px 10px 5px grey;
+}
+/*# sourceMappingURL=style.css.map */

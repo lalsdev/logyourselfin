@@ -22,18 +22,19 @@ function filter($data){
 
 //error messages
 //if empty username email or password, not added to db
-if (isset($_POST['register'])){
+if (isset($_POST['submit'])){
     if (empty($username) || empty($email) || empty($password)){
         echo 'All fields must be filled';
         } else {
-        //sql query which asks to insert    
+        //sql query which asks to insert into db  
         $sql = "INSERT INTO student (username, email, password)
         VALUES ('$username', '$email', '$password')";
-        if ($connectdb->query($sql) === TRUE) {
-            echo "added to db";
-        } else {
-            echo "Error: " . $sql . "<br>" . $connectdb->error;
-        }  
+            if (mysqli_query($connectdb, $sql)){
+                header('Location: custom.php');
+                } else {
+                echo "Error: " . $sql . "<br>" . $connectdb->error;
+            }
+            mysqli_close($connectdb);  
     }
 }
 ?>

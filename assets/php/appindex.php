@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
     $username = filter($_POST['username']);
     $passwordlogin = $_POST['password'];
     // check username is in db
-    $sql = "SELECT username, password FROM student WHERE username='$username';";
+    $sql = "SELECT * FROM student WHERE username='$username';";
     $result = mysqli_query($connectdb, $sql); //var storing query result
     if(mysqli_num_rows($result) > 0){
         // gets data from row and shows it
@@ -25,10 +25,10 @@ if (isset($_POST['submit'])){
                     session_start();
                     $_SESSION['loggedIn'] = true;
                     $_SESSION['username']= $username;
-
+                    $_SESSION['id'] = $row['id'];
                     header('Location: assets/php/custom.php');
                 } else {
-                    echo error('incorrect password', 'error');
+                    error('incorrect password', 'error');
                 }
         }
     } else if (empty($passwordlogin)){ // checks if password not in db

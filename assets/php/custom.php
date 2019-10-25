@@ -13,7 +13,9 @@ include 'appcustom.php';
 	<body>
         <div class="mx-auto col-5">
             <form action="" method="post" accept-charset="utf-8" class="mt-5 bordercool">
-                <h1>Welcome <?php echo $_SESSION['username'];?></h1>
+                <h5>Welcome <?php echo $_SESSION['username'];?></h5>
+                <small>Want to update your info? Come <a href="info.php">here</a></small><br/>
+                <br/>
                 <button type="submit" name="submit" class="btn btn-outline-secondary">Log out</button>
             </form>
         </div>

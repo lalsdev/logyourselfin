@@ -1,6 +1,7 @@
 <?php 
+session_start();
 require 'connectdb.php';
-// include 'appinfo.php';
+include 'appinfo.php';
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -12,9 +13,14 @@ require 'connectdb.php';
 	<body>
     <div class="mx-auto col-5">
             <form action="" method="post" accept-charset="utf-8" class="mt-5 bordercool">
+                <h5>Welcome <?php echo $_SESSION['username'];?></h5>
                 <div class="form-group">
                     <label for="username">username</label>
                     <input class="form-control" type="text" name="username" id="username" />
+                    <?php
+                    echo $succeedus;
+                    echo $errorus;
+                    ?>
                 </div>
                 <div class="form-group">
                     <label for="mail">email</label>

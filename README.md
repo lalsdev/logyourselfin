@@ -2,6 +2,16 @@
 database creation and interaction
 
 ## Exercise which makes me play with a database.
+This exercise makes me play with creating my own db. The aim is for me to 
+- write SQL queries
+- use a database manager
+- make a create read update and delete system
+- write a registration and login forms
+- manage a login state
+
+## Drawing mockup of the system
+![](assets/img/1.jpg)
+![](assets/img/2.jpg)
 
 ## Content
 - a login page
@@ -24,3 +34,18 @@ database creation and interaction
     - button delete account
         - if click on it, ask the user if hes sure if yes then delete from db
     - button update info
+
+## Tools
+- HTML, CSS, SASS
+- Bootstrap
+- PHP
+- PHP myadmin
+- terminal to manage the db
+
+## Progression
+- Login, logout, updating the username works
+- Need to continue displaying errors and Update, Delete system
+- Also need to deploy the form
+
+## Credits
+Made in Belgium

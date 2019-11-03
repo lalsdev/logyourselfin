@@ -44,9 +44,10 @@ This exercise makes me play with creating my own db. The aim is for me to
 
 ## Progression
 - Login, logout, updating the username works
-- Need to continue displaying errors login page
-- errors update page, delete
-- Also need to deploy the form
+- Add displaying errors all pages
+- Deploy the form
+- Add DB to README.md sql format
+- Continue Update, Delete system
 
 ## Credits
 Made in Belgium

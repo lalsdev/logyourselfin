@@ -1,6 +1,6 @@
 <?php
 require 'connectdb.php';
-######### USERNAME UPDATE ########################
+include 'appcustom.php';
 # functions error and filter #
 function error($message, $color){
 	return "<small class='$color'> $message </small>";
@@ -18,17 +18,16 @@ function filter($data){
 $usernameupdate = filter($_POST['username']);
 
 
-# update username #
+######### USERNAME UPDATE ########################
 $sql = "UPDATE student SET username='".$usernameupdate. "' WHERE id = '".$_SESSION['id']."'";
 if($usernameupdate == $_POST['username']){
     if (mysqli_query($connectdb, $sql)) {
         if(!empty($usernameupdate)){
         $succeedus = succeed('Record updated successfully','ok');
+        echo $usernameupdate;
         }
     } 
 } else {
     $errorus = error('Choose another one', 'error'); 
     }
-
-
 ?>

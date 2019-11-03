@@ -1,4 +1,5 @@
 <?php
+### SET VARIABLES ###
 ### function error ##################
 function error($message, $color){
 	return "<small class='$color'> $message </small>";
@@ -11,10 +12,11 @@ function filter($data){
     return $data;
 }
 ########## checking values username and password in database ######################
+
 if (isset($_POST['submit'])){
-    $username = filter($_POST['username']);
-    $passwordlogin = $_POST['password'];
     // check username is in db
+    $username = filter($_POST['username']);
+    $passwordlogin = $_POST['password'];    
     $sql = "SELECT * FROM student WHERE username='$username';";
     $result = mysqli_query($connectdb, $sql); //var storing query result
     if(mysqli_num_rows($result) > 0){
@@ -31,8 +33,6 @@ if (isset($_POST['submit'])){
                     error('incorrect password', 'error');
                 }
         }
-    } else if (empty($passwordlogin)){ // checks if password not in db
-        $errorall =  error('Fields can\'t be empty','error');
     } else {
         $errorlogin = error('Not recognized','error');
     }

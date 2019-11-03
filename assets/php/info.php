@@ -50,8 +50,9 @@ include 'appinfo.php';
                     <input class="form-control" type="text" name="github" id="github"/>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="btn btn-outline-secondary">Update</button><br/>
-            </form>
+                <button type="submit" name="submit" class="btn btn-outline-secondary">Update</button>
+                <button type="submit" name="submit" class="btn btn-outline-secondary">Log out</button>            
+                </form>
         </div>
 	</body>
 </html>

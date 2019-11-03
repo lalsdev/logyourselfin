@@ -1,5 +1,5 @@
 # logyourselfin
-database creation and interaction 
+database creation and interaction <br/>
 You can see the result [here](https://logyourselfin.herokuapp.com/)
 
 ## Exercise which makes me play with a database.

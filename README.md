@@ -44,7 +44,8 @@ This exercise makes me play with creating my own db. The aim is for me to
 
 ## Progression
 - Login, logout, updating the username works
-- Need to continue displaying errors and Update, Delete system
+- Need to continue displaying errors login page
+- errors update page, delete
 - Also need to deploy the form
 
 ## Credits

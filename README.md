@@ -1,5 +1,6 @@
 # logyourselfin
-database creation and interaction
+database creation and interaction <br/>
+You can see the result [here](https://logyourselfin.herokuapp.com/)
 
 ## Exercise which makes me play with a database.
 This exercise makes me play with creating my own db. The aim is for me to 
@@ -45,8 +46,6 @@ This exercise makes me play with creating my own db. The aim is for me to
 ## Progression
 - Login, logout, updating the username works
 - Add displaying errors all pages
-- Deploy the form
-- Add DB to README.md sql format
 - Continue Update, Delete system
 
 ## Credits

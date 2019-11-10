@@ -47,6 +47,7 @@ This exercise makes me play with creating my own db. The aim is for me to
 - Login, logout, updating the username works
 - Add displaying errors all pages
 - Continue Update, Delete system
+- When deployed some bugs arised.. related to the database?
 
 ## Credits
 Made in Belgium

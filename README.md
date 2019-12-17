@@ -11,7 +11,7 @@ This exercise makes me play with creating my own db. The aim is for me to
 - manage a login state
 
 ## UML 
-![](assets/img/UML Logyourselfin.svg)
+![](assets/img/UMLlogyourselfin.svg)
 
 ## Content
 - a login page

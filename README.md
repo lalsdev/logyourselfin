@@ -1,18 +1,17 @@
-# logyourselfin
+# Log Yourself In
 database creation and interaction <br/>
-You can see the result [here](https://logyourselfin.herokuapp.com/)
+You can see the page [here](https://logyourselfin.herokuapp.com/)
 
 ## Exercise which makes me play with a database.
 This exercise makes me play with creating my own db. The aim is for me to 
 - write SQL queries
-- use a database manager
+- use a database manager (phpmyadmin)
 - make a create read update and delete system
 - write a registration and login forms
 - manage a login state
 
-## Drawing mockup of the system
-![](assets/img/1.jpg)
-![](assets/img/2.jpg)
+## UML 
+![](assets/img/UML Logyourselfin.svg)
 
 ## Content
 - a login page
@@ -42,12 +41,10 @@ This exercise makes me play with creating my own db. The aim is for me to
 - PHP
 - PHP myadmin
 - terminal to manage the db
+- Heroku
 
 ## Progression
-- Login, logout, updating the username works
-- Add displaying errors all pages
-- Continue Update, Delete system
-- When deployed some bugs arised.. related to the database?
+- Bug when I try to insert a new user into the database.
 
 ## Credits
 Made in Belgium
